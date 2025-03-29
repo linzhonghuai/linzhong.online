@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 - 林中游戏</title>
+    <meta name="description" content="在林中游戏平台上玩经典的2048数字益智游戏，通过滑动合并相同数字，挑战高分！">
+    <link rel="canonical" href="https://linzhong.online/2048.html" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles */
+        :root {
+            --apple-blue: #007AFF;
+            --apple-gray: #8E8E93;
+            --apple-bg: #F5F5F7;
+        }
+        body {
+            background-color: var(--apple-bg);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        .game-container {
+            aspect-ratio: 1/1;
+            max-height: 80vh;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LR13GRHSQ8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-LR13GRHSQ8');
+    </script>
+</head>
+<body class="min-h-screen">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <nav class="flex justify-between items-center">
+                <a href="index.html" class="text-[#1D1D1F] hover:text-[#007AFF] transition-colors">
+                    <span class="text-xl font-bold">林中游戏</span>
+                </a>
+                <a href="index.html" class="text-[#86868B] hover:text-[#007AFF] transition-colors">
+                    返回游戏列表
+                </a>
+            </nav>
+            <h1 class="text-4xl font-bold text-center text-[#1D1D1F] mt-4">2048</h1>
+            <p class="text-center text-[#86868B] mt-2">经典数字益智游戏</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="bg-white rounded-2xl shadow-lg p-6 mb-8">
+            <div class="game-container w-full">
+                <iframe 
+                    src="https://play2048.co/"
+                    class="w-full h-full rounded-lg"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-[#1D1D1F] mb-4">游戏规则</h2>
+                <ul class="space-y-3 text-[#86868B]">
+                    <li>🎮 使用方向键或滑动控制游戏</li>
+                    <li>🔢 相同数字相撞时会合并成为它们的和</li>
+                    <li>💪 每次移动后，会在空白处随机出现一个2或4</li>
+                    <li>🏆 目标是创建一个2048的方块</li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-[#1D1D1F] mb-4">游戏技巧</h2>
+                <ul class="space-y-3 text-[#86868B]">
+                    <li>⚔️ 保持大数字在角落</li>
+                    <li>🛡️ 尽量保持一个方向的移动</li>
+                    <li>📈 优先合并大数字</li>
+                    <li>🎯 避免小数字散布在棋盘上</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white mt-8 py-6">
+        <div class="container mx-auto px-4 text-center text-[#86868B]">
+            <p>&copy; 2025 林中游戏. 保留所有权利。</p>
+        </div>
+    </footer>
+</body>
+</html>
